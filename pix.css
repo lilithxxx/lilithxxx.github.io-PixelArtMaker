@@ -1,0 +1,13 @@
+body{
+	text-align:center;
+}
+h1{
+	font-family:"cursive";
+	font-style:oblique;
+	font-size:50pt;
+}
+#c1{
+	border:#000 solid 1px;
+	width:600px;
+	height:400px;
+}

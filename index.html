@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pixel Art Maker!</title>
+		<script src='design.js' type='text/javascript'></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>	
+		<link href='pix.css' type='text/css' rel="stylesheet">
+	</head>
+	<body>
+		<h1>Pixel Art Maker</h1>
+		<h2>Choose grid size</h2>
+		<p>Choose Height:<input type='range' id='height' max='10' min='1'>
+		Choose Width:<input type='range' id='width' max='30' min ='1'></p>
+		<p><strong>Choose color:</strong><input type='color' id='color' value='#000' onchange="docolor()"></p>
+		<input type='button' id='but' value="Submit" onclick="dimensions1()">
+		<p><h2>Design Grid</h2></p>
+	</body>
+</html>
