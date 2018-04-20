@@ -1,4 +1,4 @@
-var col;
+var col,c=-1;
 function dimensions1()
 {
 	col=null;
@@ -26,9 +26,22 @@ function dimensions1()
 }
 function docolor()
 {
+	c++;
 	var d3=document.getElementById("color");
 	col=d3.value;
 	$(".can").on("click",function(){
+		if($(this).hasClass("cancol")){
+			$(this).css("background-color","white");
+			if(c%2==0)
+			$(this).removeClass("cancol");
+			else
+			$(this).addClass("cancol");
+		}
+		else{
 			$(this).css("background-color",col);
+			if(c%2!=0)
+			$(this).removeClass("cancol");
+			else
+			$(this).addClass("cancol");}
 			});
 }
